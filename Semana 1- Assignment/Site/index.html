@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="robots" content="index,follow">
+		<meta name="author" content="Natanael Domingos">
+
+		<title></title>
+		<!-- Importa um conjunto básico de icones que podem ser úteis no site -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<script src="https://kit.fontawesome.com/ca92e3de10.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="icon" href="img/icon.png">
+
+	</head>
+	<body>
+		<header id="header" class="principal_header">
+			<a href="index.html" > <h1 class="logo"> Teste</h1> </a>
+			<button class="btn_menu"><i class="fas fa-bars fa-lg"></i></button>
+			<nav class="menu">
+				<a class="btn_fechar"><i class="fa fa-times"></i></a>
+				<ul>
+					<li><a href="#"> Home     </a></li>
+					<li><a href="#"> Blog     </a></li>
+					<li><a href="#"> Sobre    </a></li>
+					<li><a href="#"> Contato  </a></li>
+				</ul>
+			</nav>
+		</header><!-- /header -->
+
+		<!-- Slider ou Primeira Headline com Call to Action  -->
+		<div class="slider"> 
+			<div class="principal_headline">
+				<h2>HeadLine Principal</h2>
+				<h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h3>
+			</div>
+			<div class="princial_cta">
+				<button class="btn_cadastrar">Cadastrar<i class="fas fa-download"></i></button>
+			</div>
+		</div>
+
+		<!-- Estrutura do Blog -->
+		<main class="blog">
+			<article class="posts">
+				<a href=""><img src="img/artigo_1.jpg" alt=""></a>
+				<div class="resumo_post">
+					<a href="#"><h4> Título do post</h4></a>					
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, 	consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipis
+					</p>
+				</div>			
+			</article>	
+			<article class="posts">
+				<a href=""><img src="img/artigo_2.jpg" alt=""></a>
+				<div class="resumo_post">
+					<a href="#"><h4> Título do post3</h4></a>					
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, 	consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipis
+					</p>
+				</div>			
+			</article>	
+			<article class="posts">
+				<a href=""><img src="img/artigo_3.jpg" alt=""></a>
+				<div class="resumo_post">
+					<a href="#"><h4> Título do post4</h4></a>					
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, 	consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipis
+					</p>
+				</div>			
+			</article>	
+			<article class="posts">
+				<a href=""><img src="img/artigo_4.jpg" alt=""></a>
+				<div class="resumo_post">
+					<a href="#"><h4> Título do post5</h4></a>					
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, 	consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipis
+					</p>
+				</div>	
+						
+		</main>
+
+		<!-- NEWSLETTER INSCRIÇÕES NO BLOG -- >
+		<section class="newsletter">
+			<h2></h2>
+			<<p></p>
+			<form action="index_submit" method="get" accept-charset="utf-8">
+				<input type="email" name="email" placeholder="Seu melhor e-mail">
+				<button type="">Baixar</button>
+			</form>
+		</section>
+
+
+
+
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+				$(".btn_menu").click(function(){
+					$(".menu").show();
+				});
+				$(".btn_fechar").click(function(){
+					$(".menu").hide();
+				});
+
+			</script>
+	</body>
+</html>
