@@ -9,7 +9,6 @@ a    {  text-decoration: none;}
 ul   {  list-style: none;}
 img  {  width:100%;}
 
-/* FIM Resets Básicos do Layout*/
 
 /* CABEÇALHO */
 .principal_header{ width: 100%; float: left; padding: 3%; }
@@ -45,5 +44,61 @@ img  {  width:100%;}
 .resumo_post p{margin-top:4%; line-height: 1.5em;}
 
 
-/* NEWS LETTER*/
-.newsletter{widt:100;}
+/* NEWSLETTER*/
+.newsletter{width:100%;float:left;text-align:center;padding:3% 4%;background-color:#130400;}
+.newsletter h2 {font-size:1.5em;color:#fff;font-weight:700;}
+.newsletter p  {color:#fff;}
+.newsletter form {margin-top:2%;}
+.newsletter input {width:100%;background-color:#130400;color:#fff;border:1px solid rgba(255, 255, 255, 0.3);padding:5%; border-radius: 5px;}
+.newsletter button {width:100%;background-color:#fff;color:#130400;border-radius: 5px;cursor: pointer;padding:5%;margin-top:2%;}
+
+/* RODAPÉ*/
+.rodape{width: 100%;float: left;padding: 3% 4%; text-align:center;background-color:rgb(0,0,0);}
+.redes_sociais a {font-size:1.5em; color:rgba(255,255,255,0.3);margin-right: 3%;}
+.redes_sociais a:last-child {margin-right:0;}
+.redes_sociais a:hover {color:rgb(255,255,255);}
+.copyright{ color:#fff;margin-top: 2%; font-size: 1em;}
+.copyright a { font-size: 1em; }
+
+
+/* Media Screnn - Responsividade por tamanho do dispositivo - configurações*/
+
+/* SMALL - SMARTPHONES */
+@media  screen and (min-width: 480px) {
+	.logo{width: 214px; background: url('../img/icon_mobile.png') center center/214px no-repeat;}
+	
+}
+/* SMALL - TABLETS */
+@media  screen and (min-width: 768px) {
+	.posts { width:49%;float:left;margin-right: 2%;}
+	.posts:nth-child(2){margin-right: 0;}
+	.newsletter input  { width:70%;padding: 2%;float: left;margin-right:1%;}
+	.newsletter button { width: 29%;padding: 2%;float:right;margin-top: 0;}
+}
+
+/* MEDIUM - TABLETS E DESKTOPS */
+@media  screen and (min-width: 960px) {
+	.principal_headline {width:70%;float:left;text-align: left;}
+	.btn_cadastrar {width:30%;float:right;margin-top:0;}
+	.posts { width:32%;}
+	.posts:nth-child(2){margin-right:2%;}
+	.posts:nth-child(3){margin-right: 0;}
+	.newsletter input  { width: 40%; float:none; } 
+	.newsletter button { width: 20%; float:none; 
+
+
+}
+
+/* LARGE DEVICES   - DESKTOPS E TELAS SUPERIOR */
+@media  screen and (min-width: 1280px) {
+	
+	.btn_menu  { display: none;}
+	.btn_fechar{ display:none;}
+	.menu{ width:auto;height:56px;line-height:56px;float:right; background-color:#F8F4E9; display:block !important;position: static;}
+	.menu li   { padding:0;float:left;}
+	.menu li a { color:#130400; font-size:1em;padding:15px;}
+	.menu li a :hover {border:none;color:#da6709;}
+
+}
+	
+
