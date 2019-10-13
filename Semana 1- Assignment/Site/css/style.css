@@ -8,6 +8,8 @@ body { background-color: #F8F4E9; }
 a    {  text-decoration: none;}
 ul   {  list-style: none;}
 img  {  width:100%;}
+h2   {font-size:22pt;font-weight:700;}
+p    {font-size:13.5pt;padding-top:1%;}
 
 
 /* CABEÇALHO */
@@ -101,5 +103,7 @@ img  {  width:100%;}
 
 }
 
+/* Páginas obrigatórias (politica de privacidade)*/
+.wrap_content{padding:10%;}
 
 
