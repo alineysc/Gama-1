@@ -8,16 +8,29 @@
 		<meta name="robots" content="index,follow">
 		<meta name="author" content="Natanael Domingos">
 
-		<title></title>
+		<title>Home:</title>
+
+		<link rel="icon" href="img/icon.png"> 
 		<!-- Importa um conjunto básico de icones que podem ser úteis no site -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		
+		<!-- Importa icons do Fontawesome-->		
 		<script src="https://kit.fontawesome.com/ca92e3de10.js" crossorigin="anonymous"></script>
+		<!--Importa fonte padrão do site - Open Sans -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-		<link rel="icon" href="img/icon.png">
+		
 
 	</head>
 	<body>
+		
+		<!-- Scripts Essênciais   -->
+		<!-- JQUERY -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<!-- MATERIALIZE JS-->
+		<script src="js/materialize.js" ></script>
+		
+
+
+		<!-- CABEÇALHO DO SITE  -->		
 		<header id="header" class="principal_header">
 			<a href="index.html" > <h1 class="logo"> Teste</h1> </a>
 			<button class="btn_menu"><i class="fas fa-bars fa-lg"></i></button>
@@ -30,7 +43,7 @@
 					<li><a href="#"> Contato  </a></li>
 				</ul>
 			</nav>
-		</header><!-- /header -->
+		</header>
 
 		<!-- Slider ou Primeira Headline com Call to Action  -->
 		<div class="slider"> 
@@ -103,8 +116,7 @@
 		</footer>
 		
 
-		<!-- JQUERY -->
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<!-- Script Função Fechar e Abrir menum em dispositivos menores -->
 		<script>
 				$(".btn_menu").click(function(){
 					$(".menu").show();
