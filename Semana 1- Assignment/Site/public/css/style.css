@@ -27,15 +27,21 @@ p    {font-size:13.5pt;padding-top:1%;}
 .menu li a:hover {text-decoration: underline;}
 
 /* SLIDER ou Banner*/
-.slider{width: 100%;float: left;text-align: center;padding: 4%; background-color:#FEB72A;/*background: url('../img/slider.jpg') no-repeat fixed*/}
+.slider{width: 100%;height:500px;float: left;text-align: center;padding: 4%;background: url('../img/slider_1.jpg') center top no-repeat fixed;}
 .principal_headline {width:100%;}
 .principal_headline h2 {font-size:2.5em;color:#fff;font-weight:700;}
 .principal_headline h3 {font-size:1.5em;color:#fff;}
 
 .principal_headline {width: 100%;margin-top: 3%;}
-.princial_cta i {float:right;}
-.btn_cadastrar {width:100%; font-size:1.5em; text-align:left; cursor: pointer;padding:5%;border-radius:10px; background-color:#ff9945;color:black;}
+.btn_cadastrar {width:100%; font-size:1.3em; text-align:left; cursor: pointer;padding:5%;border-radius:10px; background-color:#ff9945;color:black;}
 
+/* Ebook Download*/
+.ebook{width:100%;float:left;text-align:center;padding:3% 4%;background-color:#474B57;}
+.ebook h2 {font-size:1.2em;color:#fff;font-weight:700;}
+.ebook p  {color:#fff;}
+.ebook form {margin-top:2%;}
+.ebook input {width:100%;background-color:#fff;color:#fff;border:1px solid rgba(255, 255, 255, 0.3);padding:3% 5%; border-radius: 3px;}
+.ebook button {width:100%;background-color:#FF9600;color:#fff;border-radius:3px;cursor: pointer;padding:2.2% 5%;margin-top:2%;}
 
 /* BLOG */
 .blog{width:100%;float:left;padding: 3% 4%;}
@@ -51,8 +57,9 @@ p    {font-size:13.5pt;padding-top:1%;}
 .newsletter h2 {font-size:1.5em;color:#fff;font-weight:700;}
 .newsletter p  {color:#fff;}
 .newsletter form {margin-top:2%;}
-.newsletter input {width:100%;background-color:#130400;color:#fff;border:1px solid rgba(255, 255, 255, 0.3);padding:5%; border-radius: 5px;}
-.newsletter button {width:100%;background-color:#fff;color:#130400;border-radius: 5px;cursor: pointer;padding:5%;margin-top:2%;}
+.newsletter input {width:100%;background-color:#130400;color:#fff;border:1px solid rgba(255, 255, 255, 0.6);padding: 3% 5%; border-radius: 5px;}
+.newsletter button {width:100%;background-color:#fff;color:#130400;border-radius: 5px;cursor: pointer;padding:3% 5%;margin-top:2%;}
+.newsletter input:focus{ background-color:#fff;color:black; }
 
 /* RODAPÉ*/
 .rodape{width: 100%;float: left;padding: 3% 4%; text-align:center;background-color:rgb(0,0,0);}
@@ -67,7 +74,8 @@ p    {font-size:13.5pt;padding-top:1%;}
 
 /* SMALL - SMARTPHONES */
 @media  screen and (min-width: 480px) {
-	.logo{width: 214px; background: url('../img/icon_mobile.png') center center/214px no-repeat;}
+	.slider {background: url('../img/artigo_1.jpg') center center no-repeat fixed;}
+	.logo   {width: 214px; background: url('../img/icon_mobile.png') center center/214px no-repeat;}
 	
 }
 /* SMALL - TABLETS */
@@ -76,17 +84,28 @@ p    {font-size:13.5pt;padding-top:1%;}
 	.posts:nth-child(2){margin-right: 0;}
 	.newsletter input  { width:70%;padding: 2%;float: left;margin-right:1%;}
 	.newsletter button { width: 29%;padding: 2%;float:right;margin-top: 0;}
+	.ebook input  { width: 40%; float:none; padding:2.1% 5%;} 
+	.ebook button { width: 20%; float:none; }
 }
 
 /* MEDIUM - TABLETS E DESKTOPS */
 @media  screen and (min-width: 960px) {
-	.principal_headline {width:70%;float:left;text-align: left;}
+	.blog{padding:2% 10%;}
+	.principal_header{padding:2% 5%;}
+	.principal_headline {width:100%;float:left;text-align:left;}
 	.btn_cadastrar {width:30%;float:right;margin-top:0;}
 	.posts { width:32%;}
 	.posts:nth-child(2){margin-right:2%;}
-	.posts:nth-child(3){margin-right: 0;}
-	.newsletter input  { width: 40%; float:none; } 
-	.newsletter button { width: 20%; float:none; }
+	.posts:nth-child(3){margin-right:0;}
+	.newsletter{padding:2% 4%;}
+	.newsletter p {font-size:1em;}
+	.newsletter input  { width: 40%; float:none; padding:1%;width: 30%;}
+	
+	.newsletter button { width: 20%; float:none; padding:1%;width:15%; }
+	.ebook{ padding:2% 4%;}
+	.ebook input  { padding:1%;width: 30%;} 
+	.ebook button {padding:1%;width:15%;}
+	.ebook form {margin-top:1%;}
 
 
 }
@@ -96,7 +115,9 @@ p    {font-size:13.5pt;padding-top:1%;}
 	
 	.btn_menu  { display: none;}
 	.btn_fechar{ display:none;}
-	.menu { width:auto;height:56px;line-height:56px;float:right; background-color:#F8F4E9; display:block !important;position: static;}
+	.principal_headline{ width: 100%;}
+	.btn_cadastrar     { margin-top:5%;margin-left:2%;float: left;padding:1.5% 5%;}
+	.menu      { width:auto;height:56px;line-height:56px;float:right; background-color:#F8F4E9; display:block !important;position: static;}
 	.menu li   { padding:0;float:left;}
 	.menu li a { color:#130400; font-size:1.1em;padding:15px;}
 	.menu li a :hover {border:none;color:#da6709;}
