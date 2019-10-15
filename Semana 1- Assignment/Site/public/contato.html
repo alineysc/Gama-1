@@ -10,7 +10,7 @@
 
 		<title> Fale Conosco</title>
 
-		<link rel="icon" href="img/icon.png"> 
+		<link rel="icon" href=""> 
 		<!-- Importa um conjunto básico de icones que podem ser úteis no site -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/contato_estilos.css">
@@ -42,10 +42,9 @@
 			<nav class="menu">
 				<a class="btn_fechar"><i class="fa fa-times"></i></a>
 				<ul>
-					<li><a href="#"> Home     </a></li>
-					<li><a href="#"> Blog     </a></li>
-					<li><a href="#"> Sobre    </a></li>
-					<li><a href="#"> Contato  </a></li>
+					<li><a href="index.html">    Home     </a></li>
+					<li><a href="#">             Sobre    </a></li>
+					<li><a href="contato.html">  Contato  </a></li>
 				</ul>
 			</nav>
 		</header>
@@ -74,13 +73,15 @@
 						<p class="light">
 						 Para mais informações, sugestões e novas solicitações entre em contato. Seu feedback é muito importe para nós
 						</p>
-						<form action="" method="post" accept-charset="utf-8">
+
+						<!-- Formulário de cadastro  -->
+						<form action="" method="post" accept-charset="utf-8" id="formulario_contato">
 							<div class="input-field">
-								<input type="text" name="contato_name" id="id_contato">
-								<label for="id_contato"> Seu nome</label>
+								<input type="text" name="contato_name" id="nome">
+								<label for="nome"> Seu nome</label>
 							</div>
 							<div class="input-field">
-								<input type="email" name="email" id="email">
+								<input type="text" name="email" id="email">
 								<label for="email"> Seu email</label>
 							</div>
 							<div class="input-field">
@@ -106,13 +107,18 @@
 				    <a href="#"> <i class="fa fa-envelope">  </i> </a>
 				<div>
 			    <p class="copyright">
-			    	Copyright © 2019 NossoProjeto.com. <a href="#">Política de Privacidade</a>
+			    	Copyright © 2019 | Parceiro do comércio
+			    </p>
+			    <p class="copyright">
+			    	 <a href="politica-de-privacidade.html">Política de Privacidade</a> 
+			    	 <a href="termos-de-uso.html">Termos de uso</a>
 			    </p>
 			
 		</footer>
 		
 
 		<!-- Script Função Fechar e Abrir menum em dispositivos menores -->
+		<script src="js/principal.js"></script>
 		<script>
 				$(".btn_menu").click(function(){
 					$(".menu").show();
@@ -121,6 +127,15 @@
 					$(".menu").hide();
 				});
 
-			</script>
+		</script>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+     	https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+
+
+
 	</body>
 </html>
