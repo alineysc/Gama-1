@@ -13,21 +13,39 @@ p    {font-size:13.5pt;padding-top:1%;}
 
 
 /* CABEÇALHO */
-.principal_header{ width: 100%; float: left; padding: 3%; }
-.logo{width: 50px; height:50px; float: left;background: url('../img/3.png') center center/56px no-repeat; font-size:0;}
+.principal_header{ width: 100%; float: left; padding: 3%;background-color:black; color:white;}
+.logo{width: 50px; height:50px; float: left;background: url('../img/parceirocomercio_logo_white.png') center center/56px no-repeat; font-size:0;}
 .btn_menu{width: 60px;height: 60px;float:right;text-align: center;color:#fff; border-radius: 60px;cursor: pointer;
 			background: linear-gradient(to right, #ff9945,#ea6d1d);}
 
 /* MENU */
-.menu{width: 100%;height: 100%;position:fixed;background-color:white;top: 0;left: 0; display: none;opacity: 0.80}
+.menu{width: 100%;height: 100%;position:fixed;top: 0;left: 0; display: none;opacity: 0.80;color:white;}
 .btn_fechar{font-size:2em;float: right;cursor: pointer;margin:2% 3% 0 0;}
 .menu ul {width: 100%;float:left;text-align:center;}
-.menu li {padding: 1.5%;}
-.menu li a {font-size:2em;padding: 1.5% 3%;}
+.menu li {padding: 1.5%;color:white;}
+.menu li a {font-size:2em;padding: 1.5% 3%;color:white;background-color:black;}
 .menu li a:hover {text-decoration: underline;}
 
 /* SLIDER ou Banner*/
-.slider{width: 100%;height:500px;float: left;text-align: center;padding: 4%;background: url('../img/slider_1.jpg') center top no-repeat fixed;}
+.slider{margin-bottom:5%;width: 100%;height:500px;float: left;text-align: center;padding: 4%;background: url('../img/slider_1.jpg') center top no-repeat;}
+.main_post1 h2{background-color:rgba(27,196,125,0.4);}
+.main_post1{	margin-bottom:5%;width: 38%;height:400px;float: left;text-align: center;padding: 4%;margin: 4%;
+				background: url('../img/Capa do Post- Como administrar um restaurante.jpg') center top no-repeat;
+				-webkit-background-size: cover;
+  				-moz-background-size: cover;
+  				-o-background-size: cover;
+  				background-size: cover;
+
+}
+.main_post2 h2{background-color:rgba(27,196,125,0.4);}
+.main_post2{	margin-bottom:5%;width: 38%;height:400px;float: right;text-align: center;padding: 4%;margin: 4%;
+				background: url('../img/main2.jpg') center center no-repeat;
+				-webkit-background-size: cover;
+  				-moz-background-size: cover;
+  				-o-background-size: cover;
+  				background-size: cover;
+
+}
 .principal_headline {width:100%;}
 .principal_headline h2 {font-size:2.5em;color:#fff;font-weight:700;}
 .principal_headline h3 {font-size:1.5em;color:#fff;}
@@ -47,8 +65,8 @@ p    {font-size:13.5pt;padding-top:1%;}
 .blog{width:100%;float:left;padding: 3% 4%;}
 .posts{width: 100%;background-color:#fff;text-align: left;border-radius: 7px;margin-bottom: 3%;}
 .posts img{border-radius:7px 7px 0 0 ;}
-.resumo_post{padding:7%;}
-.resumo_post a{font-size:1.5em;font-weight: 700;color:#ff9945;}
+.resumo_post{padding:7%;min-height:180px;}
+.resumo_post a{font-size:1.5em;font-weight: 700;color:black;}
 .resumo_post p{margin-top:4%; line-height: 1.5em;}
 
 
@@ -75,21 +93,28 @@ p    {font-size:13.5pt;padding-top:1%;}
 /* SMALL - SMARTPHONES */
 @media  screen and (min-width: 480px) {
 	.slider {background: url('../img/artigo_1.jpg') center center no-repeat fixed;}
-	.logo   {width: 214px; background: url('../img/icon_mobile.png') center center/214px no-repeat;}
-	
+	.logo   {border-right:0;width: 80px; height:80px;background: url('../img/parceirocomercio_icone.png') center center/90px no-repeat;}
+	.main_post1{	float: left;width:100%;margin:2%;}
+	.main_post2{	float: left;width:100%;margin:2%;}		
 }
+
 /* SMALL - TABLETS */
 @media  screen and (min-width: 768px) {
+	.logo   {border-right:0;width: 150px; height:80px;background: url('../img/parceirocomercio_logo_white.png') center center/150px no-repeat;}
 	.posts { width:49%;float:left;margin-right: 2%;}
 	.posts:nth-child(2){margin-right: 0;}
 	.newsletter input  { width:70%;padding: 2%;float: left;margin-right:1%;}
 	.newsletter button { width: 29%;padding: 2%;float:right;margin-top: 0;}
 	.ebook input  { width: 40%; float:none; padding:2.1% 5%;} 
 	.ebook button { width: 20%; float:none; }
+	.main_post1{	float: left;width:45%;margin:2%;}
+	.main_post2{	float: right;width:45%;margin:2%;}	
 }
 
 /* MEDIUM - TABLETS E DESKTOPS */
 @media  screen and (min-width: 960px) {
+
+
 	.blog{padding:2% 10%;}
 	.principal_header{padding:2% 5%;}
 	.principal_headline {width:100%;float:left;text-align:left;}
@@ -99,8 +124,7 @@ p    {font-size:13.5pt;padding-top:1%;}
 	.posts:nth-child(3){margin-right:0;}
 	.newsletter{padding:2% 4%;}
 	.newsletter p {font-size:1em;}
-	.newsletter input  { width: 40%; float:none; padding:1%;width: 30%;}
-	
+	.newsletter input  { width: 40%; float:none; padding:1%;width: 30%;}	
 	.newsletter button { width: 20%; float:none; padding:1%;width:15%; }
 	.ebook{ padding:2% 4%;}
 	.ebook input  { padding:1%;width: 30%;} 
@@ -112,14 +136,14 @@ p    {font-size:13.5pt;padding-top:1%;}
 
 /* LARGE DEVICES   - DESKTOPS E TELAS SUPERIOR */
 @media  screen and (min-width: 1280px) {
-	
+	.posts { width:30%;}
 	.btn_menu  { display: none;}
 	.btn_fechar{ display:none;}
 	.principal_headline{ width: 100%;}
 	.btn_cadastrar     { margin-top:5%;margin-left:2%;float: left;padding:1.5% 5%;}
-	.menu      { width:auto;height:56px;line-height:56px;float:right; background-color:#F8F4E9; display:block !important;position: static;}
+	.menu      { width:auto;height:56px;line-height:56px;float:right; display:block !important;position: static;}
 	.menu li   { padding:0;float:left;}
-	.menu li a { color:#130400; font-size:1.1em;padding:15px;}
+	.menu li a { color:#130400; font-size:1.1em;padding:15px;color:white;}
 	.menu li a :hover {border:none;color:#da6709;}
 
 }
@@ -127,4 +151,41 @@ p    {font-size:13.5pt;padding-top:1%;}
 /* Páginas obrigatórias (politica de privacidade)*/
 .wrap_content{padding:10%;}
 
+/* BLOG*/
+.main_wrap		 { width:70%; margin:0 auto;padding-bottom:10px;}
+.main_wrap p 	 { line-height: 1.833; margin: 20px 0;}
+.main_wrap h1    { font-size:28pt; font-weight:700;padding:0% 0;}
+.main_wrap h2    { font-weight:600;font-size:18pt;margin:2% 0;}
+.main_wrap ol    { padding-left:2%;padding: 1% 7%;font-size:13.5pt;}
+.main_wrap ol li { padding: 1%; }
 
+/*temporario sliders posts ate ter tempo de padronizar e usar menos linhas*/
+.slider3{
+	background: url('../img/gestao-de-restaurante.jpg') center center no-repeat ;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.slider4{
+	background: url('../img/Capa do Post - Gestão de Estque.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.slider5{
+	background: url('../img/Capa do Post -Restaurantes de Sucesso.jpg') center top no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.slider6{
+	background: url('../img/Capa do Post - Como montar um buffet.jpg') center bottom no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}

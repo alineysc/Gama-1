@@ -1,9 +1,22 @@
-
-
-
-
+	// Initialize Firebase
+  	var firebaseConfig = 
+  {
+    apiKey: "AIzaSyDmrz0oLDlKl0fDiSAxp0JDnHgsreM78Ks",
+    authDomain: "parceirodocomercio.firebaseapp.com",
+    databaseURL: "https://parceirodocomercio.firebaseio.com",
+    projectId: "parceirodocomercio",
+    storageBucket: "parceirodocomercio.appspot.com",
+    messagingSenderId: "486813147049",
+    appId: "1:486813147049:web:1735f6b648d09a4acaeeb8",
+    measurementId: "G-S0C40L5G19"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  	
+	
 // Message collection 
-var referencia = firebase.database().ref("mensagens");
+var messagesRef = firebase.database().ref("messages");
 
 
 /* Event Listener - reage ao evento submit formulário de contato*/
@@ -17,7 +30,6 @@ function submit_formulario(e){
 	var email     = recuperaValores("email");
 	var subject   = recuperaValores("subject");
 	var message   = recuperaValores("message");
-
 	salvaMensagens(nome,email,subject,message);
 
 }
@@ -29,8 +41,8 @@ function recuperaValores(id){
 
 // Salva as mensagens no firebase
 function salvaMensagens(nome,email,subject,message){
-	var novaMensagem = referencia.push();
-	novaMensagem.set({
+	var newMessageRef = messagesRef.push();
+	newMessageRef.set({
 		nome:     nome,
 		email:    email,
 		subject:  subject,
