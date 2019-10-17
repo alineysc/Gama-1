@@ -1,35 +1,52 @@
 /* Resets Básicos do Layout*/
 * 	{
 	   margin: 0; padding: 0;
-	   font-size: 100%; font-weight: 300;font-family: 'Open Sans', sans-serif;
-	   border: none; outline: none; box-sizing: border-box;
+	   font-size: 100%; 
+	   font-weight: 300;
+	   font-family: 'Open Sans', sans-serif;
+	   border: none; outline: none; 
+	   box-sizing: border-box;
 	}
+
 body { background-color: #F8F4E9; }
-a    {  text-decoration: none;}
-ul   {  list-style: none;}
-img  {  width:100%;}
-h2   {font-size:22pt;font-weight:700;}
-p    {font-size:13.5pt;padding-top:1%;}
+a    { text-decoration: none;}
+ul   { list-style: none;}
+img  { width:100%;}
+h2   { font-size:22pt;font-weight:700;}
+p    { font-size:13.5pt;padding-top:1%;}
 
 
 /* CABEÇALHO */
 .principal_header{ width: 100%; float: left; padding: 3%;background-color:black; color:white;}
-.logo{width: 50px; height:50px; float: left;background: url('../img/parceirocomercio_logo_white.png') center center/56px no-repeat; font-size:0;}
-.btn_menu{width: 60px;height: 60px;float:right;text-align: center;color:#fff; border-radius: 60px;cursor: pointer;
-			background: linear-gradient(to right, #ff9945,#ea6d1d);}
+.logo{		width: 80px; height:80px; float: left;background: url('../img/parceirocomercio_icone.png') center center/90px no-repeat; font-size:0;}
+.btn_menu{	width: 60px;
+			height: 60px;float:right;text-align: center;color:#fff; 
+			border-radius: 60px;
+			cursor: pointer;
+			background:linear-gradient(to right, #ff9945,#ea6d1d);
+}
 
 /* MENU */
-.menu{width: 100%;height: 100%;position:fixed;top: 0;left: 0; display: none;opacity: 0.80;color:white;}
-.btn_fechar{font-size:2em;float: right;cursor: pointer;margin:2% 3% 0 0;}
+.menu{width: 100%;height: 100%;position:fixed;background-color:#fff;top: 0;left: 0; display: none;opacity: 0.90;color:white;}
+.btn_fechar{font-size:2em;float: right;cursor: pointer;margin:2% 3% 0 0;color:black;}
 .menu ul {width: 100%;float:left;text-align:center;}
 .menu li {padding: 1.5%;color:white;}
-.menu li a {font-size:2em;padding: 1.5% 3%;color:white;background-color:black;}
-.menu li a:hover {text-decoration: underline;}
+.menu li a {font-size:2em;padding: 1.5% 3%;color:black;font-weight:600}
+.menu li a:hover {background-color:grey;}
+.menu li:hover {text-decoration: underline;}
 
 /* SLIDER ou Banner*/
 .slider{margin-bottom:5%;width: 100%;height:500px;float: left;text-align: center;padding: 4%;background: url('../img/slider_1.jpg') center top no-repeat;}
-.main_post1 h2{background-color:rgba(27,196,125,0.4);}
-.main_post1{	margin-bottom:5%;width: 38%;height:400px;float: left;text-align: center;padding: 4%;margin: 4%;
+
+.main_post1 h2{  background-color:rgba(27,196,125,0.4);}
+
+.main_post1{	
+				margin-bottom:5%;
+				width: 100%;
+				height:400px;
+				float: left;
+				text-align: center;
+				padding: 2%;				
 				background: url('../img/Capa do Post- Como administrar um restaurante.jpg') center top no-repeat;
 				-webkit-background-size: cover;
   				-moz-background-size: cover;
@@ -38,7 +55,14 @@ p    {font-size:13.5pt;padding-top:1%;}
 
 }
 .main_post2 h2{background-color:rgba(27,196,125,0.4);}
-.main_post2{	margin-bottom:5%;width: 38%;height:400px;float: right;text-align: center;padding: 4%;margin: 4%;
+
+.main_post2{	
+				margin-bottom:5%;
+				width:100%;
+				height:400px;
+				float: left;
+				text-align: center;
+				padding: 2%;				
 				background: url('../img/main2.jpg') center center no-repeat;
 				-webkit-background-size: cover;
   				-moz-background-size: cover;
@@ -46,7 +70,7 @@ p    {font-size:13.5pt;padding-top:1%;}
   				background-size: cover;
 
 }
-.principal_headline {width:100%;}
+.principal_headline    {width:100%;}
 .principal_headline h2 {font-size:2.5em;color:#fff;font-weight:700;}
 .principal_headline h3 {font-size:1.5em;color:#fff;}
 
@@ -59,6 +83,7 @@ p    {font-size:13.5pt;padding-top:1%;}
 .ebook p  {color:#fff;}
 .ebook form {margin-top:2%;}
 .ebook input {width:100%;background-color:#fff;color:#fff;border:1px solid rgba(255, 255, 255, 0.3);padding:3% 5%; border-radius: 3px;}
+.ebook input:focus{color:grey;}
 .ebook button {width:100%;background-color:#FF9600;color:#fff;border-radius:3px;cursor: pointer;padding:2.2% 5%;margin-top:2%;}
 
 /* BLOG */
@@ -93,28 +118,26 @@ p    {font-size:13.5pt;padding-top:1%;}
 /* SMALL - SMARTPHONES */
 @media  screen and (min-width: 480px) {
 	.slider {background: url('../img/artigo_1.jpg') center center no-repeat fixed;}
-	.logo   {border-right:0;width: 80px; height:80px;background: url('../img/parceirocomercio_icone.png') center center/90px no-repeat;}
-	.main_post1{	float: left;width:100%;margin:2%;}
-	.main_post2{	float: left;width:100%;margin:2%;}		
+	
+			
 }
 
 /* SMALL - TABLETS */
 @media  screen and (min-width: 768px) {
-	.logo   {border-right:0;width: 150px; height:80px;background: url('../img/parceirocomercio_logo_white.png') center center/150px no-repeat;}
+	
 	.posts { width:49%;float:left;margin-right: 2%;}
 	.posts:nth-child(2){margin-right: 0;}
 	.newsletter input  { width:70%;padding: 2%;float: left;margin-right:1%;}
 	.newsletter button { width: 29%;padding: 2%;float:right;margin-top: 0;}
 	.ebook input  { width: 40%; float:none; padding:2.1% 5%;} 
 	.ebook button { width: 20%; float:none; }
-	.main_post1{	float: left;width:45%;margin:2%;}
-	.main_post2{	float: right;width:45%;margin:2%;}	
+	
+
 }
 
 /* MEDIUM - TABLETS E DESKTOPS */
 @media  screen and (min-width: 960px) {
-
-
+	.logo   {border-right:0;width: 150px; height:80px;background: url('../img/parceirocomercio_logo_white.png') center center/150px no-repeat;}
 	.blog{padding:2% 10%;}
 	.principal_header{padding:2% 5%;}
 	.principal_headline {width:100%;float:left;text-align:left;}
@@ -130,6 +153,8 @@ p    {font-size:13.5pt;padding-top:1%;}
 	.ebook input  { padding:1%;width: 30%;} 
 	.ebook button {padding:1%;width:15%;}
 	.ebook form {margin-top:1%;}
+	.main_post1{ float: left;width:45%;margin:2%;}
+	.main_post2{ float: right;width:45%;margin:2%;}
 
 
 }
@@ -141,7 +166,8 @@ p    {font-size:13.5pt;padding-top:1%;}
 	.btn_fechar{ display:none;}
 	.principal_headline{ width: 100%;}
 	.btn_cadastrar     { margin-top:5%;margin-left:2%;float: left;padding:1.5% 5%;}
-	.menu      { width:auto;height:56px;line-height:56px;float:right; display:block !important;position: static;}
+	.menu      { width:auto;height:56px;line-height:56px;float:right; display:block !important;position: static;background-color:black;}
+	.menu li a:hover {background-color:black;}
 	.menu li   { padding:0;float:left;}
 	.menu li a { color:#130400; font-size:1.1em;padding:15px;color:white;}
 	.menu li a :hover {border:none;color:#da6709;}

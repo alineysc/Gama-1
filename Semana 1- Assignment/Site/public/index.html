@@ -22,7 +22,8 @@
 	<body>
 		
 		<!-- Scripts Essênciais   -->
-		<!-- JQUERY -->
+		<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		
 
@@ -44,33 +45,26 @@
 		<a href="https://parceirodocomercio.firebaseapp.com/restaurantes-de-sucesso-os-segredos-revelados.html">
 			<div class="main_post1"> 
 			<div class="principal_headline">
-				<h2>Segredos de Bares e Restaurantes de Sucesso</h2>
-				
-			</div>
-			
+				<h2>Segredos de Bares e Restaurantes de Sucesso</h2>				
+			</div>			
 		</div>
 		</a>
 
-		
-		<div class="main_post2"> 
-			<div class="principal_headline">
-				<h2>Transformação digital impacto no segmento de food serviçe</h2>
-				
+		<a href="https://parceirodocomercio.firebaseapp.com/como-administrar-um-restaurante.html">
+			<div class="main_post2"> 
+				<div class="principal_headline">
+					<h2>Transformação digital impacto no segmento de food serviçe</h2>
+				</div>			
 			</div>
-			
-		</div>
-
-
-
-
+		</a>
 
 		<!-- Ebook - CTA-->
 		<section class="ebook">
 			<h2>Baixe Agora!</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, 	consectetur adipiscing eli</p>
-			<form accept-charset="utf-8">
+			<form accept-charset="utf-8" id="recompensa_digital">
 				<input type="email" name="email" placeholder="Seu melhor e-mail">
-				<button type="">Baixar<i class="fas fa-download"></i></button>
+				<button type="submit">Baixar<i class="fas fa-download"></i></button>
 			</form>
 		</section>
 
@@ -160,5 +154,29 @@
 				});
 
 			</script>
+
+			<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+
+			<script>
+			  // Your web app's Firebase configuration
+			  var firebaseConfig = {
+			    apiKey: "AIzaSyDmrz0oLDlKl0fDiSAxp0JDnHgsreM78Ks",
+			    authDomain: "parceirodocomercio.firebaseapp.com",
+			    databaseURL: "https://parceirodocomercio.firebaseio.com",
+			    projectId: "parceirodocomercio",
+			    storageBucket: "parceirodocomercio.appspot.com",
+			    messagingSenderId: "486813147049",
+			    appId: "1:486813147049:web:20dacad982b38d1fcaeeb8",
+			    measurementId: "G-BB1JE7FJDY"
+			  };
+			  // Initialize Firebase
+			  firebase.initializeApp(firebaseConfig);
+			  const db = firebase.firestore();
+			  db.settings({timestampsInSnapshots:true});
+			  firebase.analytics();
+			</script>
+
+		<script src="js/app_lead.js"></script>
+
 	</body>
 </html>
